@@ -1,0 +1,113 @@
+@import "../.././Variables.scss";
+
+
+#landing-content-title
+{
+  line-height: 0.8 !important;
+  margin-bottom: $tabSpacing;
+  margin-left: -8px;
+}
+
+@media only screen and (max-width: 900px) {
+  #landing-content-title
+  {
+    margin-left: 0px;
+  }
+}
+
+#landing-content-subtitle
+{
+  line-height: 0.8 !important;
+  margin-top: $tabSpacing;
+}
+
+.themed-vertical-line
+{
+  width: 10px;
+  background-color: $primaryColor;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #landing-content-title
+  {
+    line-height: normal;
+    margin-left: 0px;
+    margin-bottom: $tabSpacing;
+  }
+
+  #landing-content-subtitle
+  {
+    line-height: normal;
+    margin-top: 0px;
+  }
+
+  .themed-vertical-line
+  {
+    width: 5px;
+  }
+}
+
+.landing-about-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: $gutterSpacing;
+	margin-bottom: 2*$gutterSpacing;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-about-container
+  {
+    margin-top: $tabSpacing;
+    margin-bottom: 2*$tabSpacing;
+  }
+}
+
+.landing-title-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 2*$tabSpacing;
+  flex-grow: 1;
+}
+
+.landing-text-container
+{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: center;
+	padding-left: 2*$tabSpacing;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-text-container
+  {
+    padding-left: $tabSpacing;
+  }
+}
+
+.landing-image-container
+{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.landing-image
+{
+	display: block;
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	overflow-y: hidden;
+	border-radius: 50%;
+}
+
+.about-text
+{
+  margin-bottom: $paragraphSpacing;
+}

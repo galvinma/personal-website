@@ -1,0 +1,80 @@
+@import "../.././Variables.scss";
+
+.not-found-content-wrapper
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  height: 70vh
+}
+
+.not-found-text
+{
+  margin-bottom: $tabSpacing;
+}
+
+.not-found-text-container
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3*$gutterSpacing;
+  margin-left: 3*$gutterSpacing;
+}
+
+.bike-pump-container
+{
+  align-self: flex-end;
+  margin-bottom: -5px;
+}
+
+.bike-pump
+{
+  margin-left: $gutterSpacing;
+  height: 60vh;
+  width: auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .bike-pump
+  {
+    margin-left: 3*$tabSpacing;
+  }
+
+  .not-found-text-container
+  {
+    margin-left: 2*$gutterSpacing;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .not-found-content-wrapper
+  {
+    // margin-top: 3*$tabSpacing;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 80vh
+  }
+
+  .bike-pump-container
+  {
+    align-self: center;
+  }
+
+  .bike-pump
+  {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+  }
+
+  .not-found-text-container
+  {
+    margin-top: 0px;
+    margin-bottom: $gutterSpacing;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

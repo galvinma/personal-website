@@ -1,0 +1,170 @@
+@import "./Variables.scss";
+
+// Material-ui Breakpoints
+// Each breakpoint (a key) matches with a fixed screen width (a value):
+//
+//     xs, extra-small: 0px
+//     sm, small: 600px
+//     md, medium: 960px
+//     lg, large: 1280px
+//     xl, extra-large: 1920px
+//
+// Notes
+// Min-width supported == 320 px (Iphone 5/SE)
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1, .body3, .button
+{
+  font-family: "Montserrat";
+  color: $primaryBlack;
+}
+
+.subtitle2, .body1, .body2
+{
+  font-family: "Open Sans";
+  color: $primaryGray;
+}
+
+.h1
+{
+  font-size: 5rem;
+}
+
+.h2
+{
+  font-size: 4rem;
+}
+
+.h3
+{
+  font-size: 3rem;
+}
+
+.body1
+{
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.body3
+{
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1050px) {
+	.h1
+  {
+    font-size: 5rem;
+  }
+
+  .h2
+  {
+    font-size: 3rem;
+  }
+
+  .h3
+  {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+	.h1
+  {
+    font-size: 4rem;
+  }
+
+  .h2
+  {
+    font-size: 3rem;
+  }
+
+  .h3
+  {
+    font-size: 2.8rem;
+  }
+
+  .body1
+  {
+    font-size: 1.1rem;
+  }
+
+  .body3
+  {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+	.h1
+  {
+    font-size: 2.8rem;
+  }
+
+  .h2
+  {
+    font-size: 2.5rem;
+  }
+
+  .h3
+  {
+    font-size: 2rem;
+  }
+
+  .body3
+  {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .h1
+  {
+    font-size: 2.4rem;
+  }
+
+  .h3
+  {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .h1
+  {
+    font-size: 2.3rem;
+  }
+
+  .h3
+  {
+    font-size: 1.5rem;
+  }
+
+  .body3
+  {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .h1
+  {
+    font-size: 2.0rem;
+  }
+
+  .h3
+  {
+    font-size: 1.25rem;
+  }
+
+  .body3
+  {
+    font-size: 0.8rem;
+  }
+}

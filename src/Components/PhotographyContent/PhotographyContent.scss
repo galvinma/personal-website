@@ -1,0 +1,42 @@
+@import "../.././Variables.scss";
+
+.photography-image
+{
+  width: 100%;
+  max-width: 1000px;
+}
+
+.photography-container
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-caption
+{
+  margin-top: $tabSpacing !important;
+  margin-bottom: 3*$tabSpacing !important;
+}
+
+.photography-wrapper
+{
+  margin-top: $gutterSpacing;
+  margin-bottom: $gutterSpacing;
+}
+
+@media only screen and (max-width: 960px) {
+  .photography-image
+  {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .photography-image
+  {
+    max-width: 500px;
+  }
+}

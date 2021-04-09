@@ -1,0 +1,30 @@
+// Colors
+$primaryBlack: #212121;
+$primaryWhite: #FFFFFF;
+$primaryGray: #2e2e2e;
+$backgroundContrastColor: #FAFAFA;
+$backgroundEmphasisColor: #EEEEEE;
+$primaryColor: #96ABBC;
+$secondaryColor: #394F79;
+
+// Spacing
+$gutterSpacing: 50px;
+$tabSpacing: 10px;
+$indentSpacing: 5px;
+$wedgeSpacing: 2px;
+$paragraphSpacing: 1rem;
+
+// Content
+$genericContentHeight: 100vh;
+
+:export {
+  primaryBlack: $primaryBlack;
+  primaryWhite: $primaryWhite;
+  backgroundContrastColor: $backgroundContrastColor;
+  primaryColor: $primaryColor;
+  secondaryColor: $secondaryColor;
+  gutterSpacing: $gutterSpacing;
+  tabSpacing: $tabSpacing;
+  indentSpacing: $indentSpacing;
+  wedgeSpacing: $wedgeSpacing;
+}

@@ -1,0 +1,111 @@
+@import "../.././Variables.scss";
+
+.portfolio-link
+{
+  text-decoration: none;
+  color: $primaryBlack;
+}
+
+.portfolio-content-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-row-image
+{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-image-container
+{
+  display: flex;
+  flex-direction: column;
+  margin: $tabSpacing;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio-image-container
+  {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-image-container
+  {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+.portfolio-image-wrapper
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio-image-wrapper
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.portfolio-row-wrapper
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2*$gutterSpacing;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio-row-wrapper
+  {
+    align-items: center;
+  }
+}
+
+.portfolio-row-title
+{
+    margin-left: $tabSpacing !important;
+}
+
+.portfolio-row-description
+{
+    margin-left: $tabSpacing !important;
+    margin-top: $tabSpacing !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio-row-title, .portfolio-row-description
+  {
+      margin-left: 2*$tabSpacing !important;
+      margin-right: 2*$tabSpacing !important;
+      text-align: center;
+      margin-bottom: 2*$tabSpacing !important;
+  }
+
+  .portfolio-row-description
+  {
+    margin-top: 2*$tabSpacing !important;
+    font-weight: 400;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+  .portfolio-row-title, .portfolio-row-description
+  {
+      margin-bottom: $tabSpacing !important;
+  }
+
+}

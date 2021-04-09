@@ -1,0 +1,171 @@
+.portfolio-image
+{
+  width: 100%;
+}
+
+.portfolio-text-container
+{
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.portfolio-text
+{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 800px;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.portfolio-row
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.portfolio-container-left
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-right: 25px;
+}
+
+.portfolio-container-right
+{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-right-row
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-entry-container
+{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolio-icons-container
+{
+  margin-left: auto;
+}
+
+.portfolio-title-container
+{
+  display: flex;
+}
+
+.portfolio-icon
+{
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.icon-style
+{
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  .portfolio-row
+  {
+    flex-direction: column;
+  }
+
+  .portfolio-row-spacing
+  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .portfolio-image
+  {
+    max-width: 100%;
+  }
+
+  .portfolio-entry-container
+  {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .portfolio-title-container
+  {
+    min-height: 0px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-title
+  {
+    font-size: 28px !important;
+  }
+
+  .portfolio-icons-container
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .portfolio-container-left, .portfolio-container-right
+  {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .portfolio-title
+  {
+    font-size: 20px !important;
+  }
+
+  .portfolio-entry-container
+  {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}

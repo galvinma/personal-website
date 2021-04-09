@@ -1,0 +1,60 @@
+@import "../.././Variables.scss";
+
+.nav-menu-wrapper
+{
+  margin-left: auto;
+}
+
+.nav-content-container
+{
+  display: flex;
+  height: auto;
+	justify-content: flex-start;
+  align-items: center;
+}
+
+.top-nav-link-container
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  margin-right: auto;
+}
+
+.nav-text-container
+{
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-right: $tabSpacing;
+}
+
+.nav-link-container
+{
+  text-decoration: underline;
+}
+
+
+.nav-link
+{
+  text-decoration: none;
+  color: $primaryBlack;
+}
+
+.nav-spacer
+{
+  color: $primaryColor !important;
+  margin-left: 2*$tabSpacing;
+  margin-right: 2*$tabSpacing;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-spacer
+  {
+    margin-left: $tabSpacing;
+    margin-right: $tabSpacing;
+  }
+}
