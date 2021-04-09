@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    stdin_open: true
+    # Build the image locally...
+    build:
+      context: .
+    # Use the gcr image...
+    container_name: matthewrgalvin_ui
+    volumes:
+      - ./docker-ui-entrypoint.sh:/app/docker-ui-entrypoint.sh
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
