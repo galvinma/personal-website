@@ -71,13 +71,14 @@ class Nav extends React.Component {
             <div id="landing-title-container" className="landing-title-container">
                 <div id="title-line" className="themed-vertical-line"></div>
                 <div className="landing-text-container">
-                <div id="landing-content-title" className="name h1">Matthew Galvin</div>
-                <div id="landing-content-subtitle"  className="h3">Software Engineer</div>
+                <div id="landing-content-title" className="name h1"><Link class="nav-link" to="/">Matthew Galvin</Link></div>
+                <div id="landing-content-subtitle"  className="h3"><Link class="nav-link" to="/">Software Engineer</Link></div>
                 </div>
             </div>
 
             <div className="top-nav-link-container">
                 <div className="nav-text-container">
+                  
                     <div class="body3 nav-link-container">
                         <Link class="nav-link" to="/">Home</Link>            
                     </div>
@@ -86,18 +87,19 @@ class Nav extends React.Component {
                     <div class="body3 nav-link-container">
                         <Link class="nav-link" to="/portfolio">Portfolio</Link>            
                     </div>
-
-                    <div class="body3 nav-spacer">|</div>
-                    <div class="body3 nav-link-container">
-                      <a class="nav-link" href="/MatthewGalvin_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </div>
                     
                     <div class="body3 nav-spacer">|</div>
                     <div class="body3 nav-link-container">
                         <Link class="nav-link" to="/photography">Photography</Link>            
                     </div>
+
+                    <div class="body3 nav-spacer">|</div>
+                    <div class="body3 nav-link-container">
+                      <a class="nav-link" href="/MatthewGalvin_Resume_Public.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
+
                 </div>
-                </div>
+              </div>
         </div>
   )}
 }
