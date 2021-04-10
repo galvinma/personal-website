@@ -29,28 +29,28 @@ class Footer extends React.Component {
             <div className="nav-text-container">
 
               <div class="body3 nav-link-container">
-                <a class="nav-link" href="mailto:matthewrgalvin@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a class="nav-link nav-icon-container" href="mailto:matthewrgalvin@gmail.com" target="_blank" rel="noopener noreferrer">
                   <MdEmail className="nav-icon" />
                 </a>
               </div>
 
               <div class="body3 nav-spacer">|</div>
               <div class="body3 nav-link-container">
-                <a class="nav-link" href="https://github.com/galvinma" target="_blank" rel="noopener noreferrer">
+                <a class="nav-link nav-icon-container" href="https://github.com/galvinma" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="nav-icon" />
                 </a>
               </div>
               
               <div class="body3 nav-spacer">|</div>
               <div class="body3 nav-link-container">
-                <a class="nav-link" href="https://www.linkedin.com/in/matthewrgalvin/" target="_blank" rel="noopener noreferrer">
+                <a class="nav-link nav-icon-container" href="https://www.linkedin.com/in/matthewrgalvin/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedinIn className="nav-icon" />
                 </a>
               </div>
 
               <div class="body3 nav-spacer">|</div>
               <div class="body3 nav-link-container">
-                <a class="nav-link" href="https://www.twitter.com/galvinmath" target="_blank" rel="noopener noreferrer">
+                <a class="nav-link nav-icon-container" href="https://www.twitter.com/galvinmath" target="_blank" rel="noopener noreferrer">
                   <FaTwitter className="nav-icon" />
                 </a>
               </div>
