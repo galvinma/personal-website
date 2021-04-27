@@ -36,7 +36,7 @@ class Landing extends React.Component {
               </div>
 
               <div className="about-text">
-                <div className="body1">Thank you for visiting my website. Be sure to checkout out my <Link class="nav-link unstyled-link" to="/portfolio">portfolio</Link>, <Link class="nav-link unstyled-link" to="/resume">resume</Link>, and <Link class="nav-link unstyled-link" to="/photography">photography</Link>. I am always looking for new and exciting projects; If you would like to work together, or have any questions about my work, please <a className="unstyled-link" href="mailto:matthewrgalvin@gmail.com">reach out</a>.</div>
+                <div className="body1">Thank you for visiting my website. Be sure to checkout out my <Link class="nav-link unstyled-link" to="/portfolio">portfolio</Link>, <a class="nav-link unstyled-link" href="/MatthewGalvin_Resume_Public.pdf" target="_blank" rel="noopener noreferrer">resume</a>, and <Link class="nav-link unstyled-link" to="/photography">photography</Link>. I am always looking for new and exciting projects; If you would like to work together, or have any questions about my work, please <a className="unstyled-link" href="mailto:matthewrgalvin@gmail.com">reach out</a>.</div>
               </div>
             </div>
         </div>
