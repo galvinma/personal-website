@@ -6,7 +6,7 @@ services:
     build:
       context: .
     # Use the gcr image...
-    container_name: matthewrgalvin_ui
+    container_name: matthewrgalvin
     volumes:
       - ./docker-ui-entrypoint.sh:/app/docker-ui-entrypoint.sh
     env_file:
