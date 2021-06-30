@@ -32,7 +32,7 @@ class Landing extends React.Component {
                 <div className="body1">I’m a full-stack software engineer living in Portland, Oregon 🌲⛰️🌧️</div>
               </div>
               <div className="about-text">
-                <div className="body1">I work at <a className="unstyled-link" href="https://oregon.providence.org/our-services/p/providence-cancer-center/" target="_blank" rel="noopener noreferrer">Providence Health & Services</a> where I build bioinformatics pipelines and conduct clinical genomics research.</div>
+                <div className="body1">I work at <a className="unstyled-link" href="https://www.invitae.com" target="_blank" rel="noopener noreferrer">Invitae</a> where I build bioinformatics pipelines.</div>
               </div>
 
               <div className="about-text">
