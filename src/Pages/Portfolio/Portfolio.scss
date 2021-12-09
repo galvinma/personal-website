@@ -1,6 +1,13 @@
+@import "../.././Variables.scss";
+
 .portfolio-image
 {
   width: 100%;
+}
+
+.port-des
+{
+  margin-bottom: 5*$tabSpacing;
 }
 
 .portfolio-text-container

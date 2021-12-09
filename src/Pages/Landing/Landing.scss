@@ -5,7 +5,7 @@
 {
   line-height: 0.8 !important;
   margin-bottom: $tabSpacing;
-  margin-left: -8px;
+  // margin-left: -8px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -72,6 +72,15 @@
 	justify-content: flex-start;
 	margin-bottom: 2*$tabSpacing;
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-title-container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .landing-text-container

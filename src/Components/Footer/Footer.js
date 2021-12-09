@@ -4,29 +4,23 @@ import React from 'react'
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-// SVG
-import { ReactComponent as Oregon } from '../.././Images/SVG/oregon.svg'
-
 // CSS
 import './Footer.scss'
+import '.././Nav/Nav.scss'
 
 class Footer extends React.Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props);
   }
 
   render() {
     return (
       <div className="footer-content-container">
-        <div className="oregon-container">
-          <Oregon className="oregon"/>
-        </div>
         <div className="footer-text-container">
           <div className="body3 footer-attribution">Developed and designed by Matthew Galvin</div>
 
-          <div className="nav-content-container">
-            <div className="nav-text-container">
+          <div className="nav-link-container-wrapper">
+            <div className="footer-icons-container">
 
               <div class="body3 nav-link-container">
                 <a class="nav-link nav-icon-container" href="mailto:matthewrgalvin@gmail.com" target="_blank" rel="noopener noreferrer">
@@ -40,7 +34,7 @@ class Footer extends React.Component {
                   <FaGithub className="nav-icon" />
                 </a>
               </div>
-              
+
               <div class="body3 nav-spacer">|</div>
               <div class="body3 nav-link-container">
                 <a class="nav-link nav-icon-container" href="https://www.linkedin.com/in/matthewrgalvin/" target="_blank" rel="noopener noreferrer">
@@ -60,7 +54,8 @@ class Footer extends React.Component {
 
         </div>
       </div>
-  )}
+    )
+  }
 }
 
 export default (Footer)

@@ -13,15 +13,15 @@
 // Min-width supported == 320 px (Iphone 5/SE)
 
 
-.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1, .body3, .button
+.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1 .button
 {
   font-family: "Montserrat";
   color: $primaryBlack;
 }
 
-.subtitle2, .body1, .body2
+.subtitle2, .body1, .body2, .body3
 {
-  font-family: "Open Sans";
+  font-family: 'Work Sans', sans-serif;
   color: $primaryGray;
 }
 
@@ -43,13 +43,13 @@
 .body1
 {
   font-size: 1.25rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
   font-weight: 400;
 }
 
 .body3
 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1050px) {

@@ -20,43 +20,42 @@ import './Variables.scss'
 import './Font.scss'
 
 class App extends React.Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props);
 
     this.setIconDimensions = setIconDimensions.bind(this)
   }
 
-  componentDidMount()
-  {
+  componentDidMount() {
     this.setIconDimensions()
-    window.addEventListener("resize",  this.setIconDimensions.bind(this));
+    window.addEventListener("resize", this.setIconDimensions.bind(this));
   }
 
-  componentWillUnmount()
-  {
-    window.removeEventListener("resize",  this.setIconDimensions.bind(this));
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.setIconDimensions.bind(this));
   }
 
-  render(){
-  return (
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <Landing />
-            </Route>
-            <Route exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route exact path="/photography">
-              <Photography />
-            </Route>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
-        </div>
-  )}
+
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route exact path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route exact path="/photography">
+            <Photography />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default (App)

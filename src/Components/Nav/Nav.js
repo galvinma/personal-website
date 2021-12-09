@@ -8,100 +8,104 @@ import variables from '../.././Variables.scss'
 // Functions
 import { stripPx } from '../.././Util/stripPx'
 
+import headshot from '../.././Images/Headshot/mrg_headshot.jpg'
+
 class Nav extends React.Component {
-    constructor(props)
-    {
-      super(props);
-  
-      this.setLineHeight = this.setLineHeight.bind(this)
-      this.stripPx = stripPx.bind(this)
-    }
-  
-    componentDidMount()
-    {
-      this.updateDimensions()
-      window.addEventListener("resize",  this.updateDimensions.bind(this));
-    }
-  
-    componentWillUnmount() {
-      window.removeEventListener("resize",  this.updateDimensions.bind(this));
-    }
-  
-    updateDimensions()
-    {
-      this.setLineHeight()
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      portfolioActive: "nav-link-active-false",
+      photographyActive: "nav-link-active-false",
+      homeActive: "nav-link-active-false",
     }
 
+    this.resetActiveState = this.resetActiveState.bind(this)
+    this.toggleNavActiveClass = this.toggleNavActiveClass.bind(this)
 
-  setLineHeight()
-  {
-    if (document.getElementById("landing-content-title") === null || document.getElementById("landing-content-title") === undefined)
-    {
-      return
+
+  }
+
+  resetActiveState() {
+    this.setState({
+      portfolioActive: "nav-link-active-false",
+      photographyActive: "nav-link-active-false",
+      homeActive: "nav-link-active-false",
+    })
+  }
+
+
+  toggleNavActiveClass(loc) {
+    this.resetActiveState()
+
+    if (loc === "" || loc === undefined) {
+      loc = window.location.href.split("/").pop()
     }
 
-    if (document.getElementById("landing-content-subtitle") === null || document.getElementById("landing-content-subtitle") === undefined)
-    {
-      return
+    if (loc === "portfolio") {
+      this.setState({
+        portfolioActive: "nav-link-active"
+      })
     }
+    else if (loc === "photography") {
+      this.setState({
+        photographyActive: "nav-link-active"
+      })
 
-    if (document.getElementById("title-line") === null || document.getElementById("title-line") === undefined)
-    {
-      return
     }
-
-
-    let titleHeight = document.getElementById("landing-content-title").clientHeight
-    let subtitleHeight = document.getElementById("landing-content-subtitle").clientHeight
-    if (window.innerWidth < 600)
-    {
-      document.getElementById("title-line").style.height = `${titleHeight + subtitleHeight + 2*this.stripPx(variables.indentSpacing)}px`
-    } else
-    {
-      document.getElementById("title-line").style.height = `${titleHeight + subtitleHeight + 2*this.stripPx(variables.tabSpacing)}px`
+    else if (loc === "") {
+      this.setState({
+        homeActive: "nav-link-active"
+      })
     }
   }
 
+  componentDidMount() {
+    this.toggleNavActiveClass()
+  }
 
 
 
   render() {
     return (
-        <div className="top-nav">
-            <div id="landing-title-container" className="landing-title-container">
-                <div id="title-line" className="themed-vertical-line"></div>
-                <div className="landing-text-container">
-                <div id="landing-content-title" className="name h1"><Link class="nav-link" to="/">Matthew Galvin</Link></div>
-                <div id="landing-content-subtitle"  className="h3"><Link class="nav-link" to="/">Software Engineer</Link></div>
-                </div>
+      <div className="top-nav">
+        <div id="nav-title-container" className="nav-title-container">
+          <div className="headshot-container">
+            <img src={headshot} className="headshot-image" />
+          </div>
+          <div className="nav-text-container">
+            <div id="nav-content-title" className="name h1"><Link class="nav-link" to="/">Matthew Galvin</Link></div>
+            <div id="nav-content-subtitle" className="h3"><Link class="nav-link" to="/">Software Engineer</Link></div>
+          </div>
+        </div>
+
+        <div className="top-nav-link-container">
+          <div className="nav-link-container-wrapper">
+
+            <div className="body1 nav-link-container">
+              <Link id="home" className={`nav-link ${this.state.homeActive}`} to="/">Home</Link>
             </div>
 
-            <div className="top-nav-link-container">
-                <div className="nav-text-container">
-                  
-                    <div class="body3 nav-link-container">
-                        <Link class="nav-link" to="/">Home</Link>            
-                    </div>
+            <div className="body1 nav-spacer">|</div>
+            <div className="body1 nav-link-container">
+              <Link id="portfolio" className={`nav-link ${this.state.portfolioActive}`} to="/portfolio">Portfolio</Link>
+            </div>
 
-                    <div class="body3 nav-spacer">|</div>
-                    <div class="body3 nav-link-container">
-                        <Link class="nav-link" to="/portfolio">Portfolio</Link>            
-                    </div>
-                    
-                    <div class="body3 nav-spacer">|</div>
-                    <div class="body3 nav-link-container">
-                        <Link class="nav-link" to="/photography">Photography</Link>            
-                    </div>
+            <div className="body1 nav-spacer">|</div>
+            <div className="body1 nav-link-container">
+              <Link id="photography" className={`nav-link ${this.state.photographyActive}`} to="/photography">Photography</Link>
+            </div>
 
-                    <div class="body3 nav-spacer">|</div>
-                    <div class="body3 nav-link-container">
-                      <a class="nav-link" href="/MatthewGalvin_Resume_Public.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </div>
+            <div className="body1 nav-spacer">|</div>
+            <div className="body1 nav-link-container">
+              <a className="nav-link" href="/MatthewGalvin_Resume_Public.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
 
-                </div>
-              </div>
+          </div>
         </div>
-  )}
+      </div>
+    )
+  }
 }
 
 export default (Nav)
