@@ -149,7 +149,7 @@ html, body
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 1*$gutterSpacing;
+  padding-top: 2*$gutterSpacing;
 	padding-left: 2*$gutterSpacing;
   padding-right: 2*$gutterSpacing;
 }
@@ -157,7 +157,6 @@ html, body
 .content
 {
   flex: 1;
-  padding-top: $gutterSpacing;
 	padding-left: 2*$gutterSpacing;
   padding-right: 2*$gutterSpacing;
 }
@@ -183,8 +182,8 @@ html, body
   {
     padding-top: 2*$tabSpacing;
     padding-bottom: 2*$tabSpacing;
-    padding-left: 3*$tabSpacing;
-    padding-right: 3*$tabSpacing;
+    padding-left: $gutterSpacing;
+    padding-right: $gutterSpacing;
   }
 }
 
@@ -193,8 +192,6 @@ html, body
   {
     padding-top: 1.25*$tabSpacing;
     padding-bottom: 1.25*$tabSpacing;
-    padding-left: 1.25*$tabSpacing;
-    padding-right: 1.25*$tabSpacing;
   }
 }
 

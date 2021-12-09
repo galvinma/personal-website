@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 
 // CSS
 import './Nav.scss'
-import variables from '../.././Variables.scss'
-
-// Functions
-import { stripPx } from '../.././Util/stripPx'
-
 import headshot from '../.././Images/Headshot/mrg_headshot.jpg'
 
 class Nav extends React.Component {

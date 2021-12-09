@@ -4,7 +4,7 @@
 .headshot-image
 {
   border-radius: 50%;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 
@@ -14,7 +14,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin-bottom: 2*$tabSpacing;
+	margin-bottom: 2.5*$tabSpacing;
   flex-grow: 1;
 }
 
@@ -123,7 +123,8 @@
 
 .nav-link-container
 {
-  // text-decoration: underline;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
 
 
