@@ -1,5 +1,4 @@
 import React from 'react'
-import variables from '../.././Variables.scss'
 
 // CSS
 import './PhotographyContent.scss'
@@ -76,45 +75,87 @@ class PhotographyContent extends React.Component {
         [thor, "Train, Switzerland"],
         [thunderstormcalm, "After the storm, High Sierra Trail"],
         [geneva, "Geneva, Switzerland"]
-      ]
+      ],
+      img_content: []
     }
 
     this.shuffleArray = this.shuffleArray.bind(this)
+    this.returnImageArray = this.returnImageArray.bind(this)
   }
 
   componentDidMount() {
     this.setState({
       images: this.shuffleArray(this.state.images)
     })
+
+    this.returnImageArray()
+    window.addEventListener("resize", this.returnImageArray.bind(this));
   }
 
 
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.returnImageArray.bind(this));
+  }
 
   shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-
     return array
+  }
+
+  returnImageArray() {
+    let ret = []
+    {
+      this.state.images.map((value, index) => {
+        if (window.innerWidth > 768) {
+          if (index % 2 == 0 && this.state.images.length >= index + 1) {
+            let img_1 = this.state.images[index][0]
+            let caption_1 = this.state.images[index][1]
+            let img_2 = this.state.images[index + 1][0]
+            let caption_2 = this.state.images[index + 1][1]
+            ret.push(
+              <div className="photography-container">
+                <div className="photo-container">
+                  <a href={img_1} target="_blank">
+                    <img src={img_1} className="photography-image" />
+                  </a>
+                  <div className="body1 photo-caption">{caption_1}</div>
+                </div>
+
+                <div className="photo-container">
+                  <a href={img_2} target="_blank">
+                    <img src={img_2} className="photography-image" />
+                  </a>
+                  <div className="body1 photo-caption">{caption_2}</div>
+                </div>
+              </div>
+            )
+          }
+        } else {
+          let img_1 = this.state.images[index][0]
+          let caption_1 = this.state.images[index][1]
+          ret.push(
+            <div className="photography-container">
+              <div className="photo-container">
+                <a href={img_1} target="_blank">
+                  <img src={img_1} className="photography-image" />
+                </a>
+                <div className="body1 photo-caption">{caption_1}</div>
+              </div>
+            </div>
+          )
+        }
+      })
+    }
+    this.setState({ img_content: ret })
   }
 
   render() {
     return (
       <div className="photography-wrapper">
-        {this.state.images.map((index, value) => {
-
-          return (
-            <div className="photography-container">
-              <a href={this.state.images[value][0]} target="_blank">
-                <img src={this.state.images[value][0]} className="photography-image" />
-              </a>
-              <div className="body1 photo-caption">{this.state.images[value][1]}</div>
-            </div>
-          )
-        })
-        }
-
+        {this.state.img_content}
       </div>
     )
   }
