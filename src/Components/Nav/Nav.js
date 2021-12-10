@@ -77,22 +77,22 @@ class Nav extends React.Component {
         <div className="top-nav-link-container">
           <div className="nav-link-container-wrapper">
 
-            <div className="body1 nav-link-container">
+            <div className="body1 nav-link-container button">
               <Link id="home" className={`nav-link ${this.state.homeActive}`} to="/">Home</Link>
             </div>
 
             <div className="body1 nav-spacer">|</div>
-            <div className="body1 nav-link-container">
+            <div className="body1 nav-link-container button">
               <Link id="portfolio" className={`nav-link ${this.state.portfolioActive}`} to="/portfolio">Portfolio</Link>
             </div>
 
             <div className="body1 nav-spacer">|</div>
-            <div className="body1 nav-link-container">
+            <div className="body1 nav-link-container button">
               <Link id="photography" className={`nav-link ${this.state.photographyActive}`} to="/photography">Photography</Link>
             </div>
 
             <div className="body1 nav-spacer">|</div>
-            <div className="body1 nav-link-container">
+            <div className="body1 nav-link-container button">
               <a className="nav-link" href="/MatthewGalvin_Resume_Public.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
 

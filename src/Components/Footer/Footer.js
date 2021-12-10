@@ -17,7 +17,7 @@ class Footer extends React.Component {
     return (
       <div className="footer-content-container">
         <div className="footer-text-container">
-          <div className="body1 footer-attribution">Developed and designed by Matthew Galvin</div>
+          <div className="body1 footer-attribution footer-text">Developed and designed by Matthew Galvin</div>
 
           <div className="nav-link-container-wrapper">
             <div className="footer-icons-container">

@@ -25,7 +25,7 @@ class Landing extends React.Component {
           <div className="landing-about-container">
             <div className="about-text-container">
               <div className="about-text">
-                <div className="body1">Hi, I’m Matthew! 👋</div>
+                <p className="body1">Hi, I’m Matthew! 👋</p>
               </div>
               <div className="about-text">
                 <div className="body1">I’m a full-stack software engineer living in Portland, Oregon 🌲⛰️🌧️</div>

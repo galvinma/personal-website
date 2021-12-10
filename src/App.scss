@@ -192,6 +192,8 @@ html, body
   {
     padding-top: 1.25*$tabSpacing;
     padding-bottom: 1.25*$tabSpacing;
+    padding-left: $tabSpacing;
+    padding-right: $tabSpacing;
   }
 }
 

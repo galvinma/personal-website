@@ -13,13 +13,13 @@
 // Min-width supported == 320 px (Iphone 5/SE)
 
 
-.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1 .button
+.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1
 {
   font-family: "Montserrat";
   color: $primaryBlack;
 }
 
-.subtitle2, .body1, .body2, .body3
+.subtitle2, .body1, .body2, .body3, .button, .footer-text
 {
   font-family: 'Work Sans', sans-serif;
   color: $primaryGray;
@@ -40,7 +40,7 @@
   font-size: 3rem;
 }
 
-.body1
+.body1, .button
 {
   font-size: 1.25rem;
   line-height: 1.8rem;
@@ -85,7 +85,7 @@
     font-size: 2.8rem;
   }
 
-  .body1
+  .body1, .button
   {
     font-size: 1.1rem;
   }
@@ -130,6 +130,11 @@
   {
     font-size: 1.6rem;
   }
+
+  .body3, .button, .footer-text
+  {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -143,11 +148,6 @@
   .h3
   {
     font-size: 1.5rem;
-  }
-
-  .body3
-  {
-    font-size: 0.9rem;
   }
 }
 
@@ -163,7 +163,7 @@
     font-size: 1.25rem;
   }
 
-  .body3
+  .body3, .button, .footer-text
   {
     font-size: 0.8rem;
   }
