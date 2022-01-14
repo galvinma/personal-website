@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.14b84bbd.chunk.css",
+    "main.css": "/static/css/main.5a852e4f.chunk.css",
     "main.js": "/static/js/main.97459531.chunk.js",
     "main.js.map": "/static/js/main.97459531.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb7fa0a0.js",
@@ -8,7 +8,7 @@
     "static/js/2.b8c51f96.chunk.js": "/static/js/2.b8c51f96.chunk.js",
     "static/js/2.b8c51f96.chunk.js.map": "/static/js/2.b8c51f96.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.14b84bbd.chunk.css.map": "/static/css/main.14b84bbd.chunk.css.map",
+    "static/css/main.5a852e4f.chunk.css.map": "/static/css/main.5a852e4f.chunk.css.map",
     "static/js/2.b8c51f96.chunk.js.LICENSE.txt": "/static/js/2.b8c51f96.chunk.js.LICENSE.txt",
     "static/media/SardiniaSunset.2026b140.jpg": "/static/media/SardiniaSunset.2026b140.jpg",
     "static/media/aboveguitar.41aac7a8.jpg": "/static/media/aboveguitar.41aac7a8.jpg",
@@ -63,7 +63,7 @@
   "entrypoints": [
     "static/js/runtime-main.fb7fa0a0.js",
     "static/js/2.b8c51f96.chunk.js",
-    "static/css/main.14b84bbd.chunk.css",
+    "static/css/main.5a852e4f.chunk.css",
     "static/js/main.97459531.chunk.js"
   ]
 }
