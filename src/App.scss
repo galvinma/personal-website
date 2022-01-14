@@ -198,3 +198,12 @@ html, body
 }
 
 
+@media only screen and (max-width: 768px) {
+  .general-text-container
+  {
+    margin: $tabSpacing;
+  }
+}
+
+
+
