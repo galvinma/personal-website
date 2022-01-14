@@ -152,10 +152,10 @@
   margin-right: 2*$tabSpacing;
 }
 
-// @media only screen and (max-width: 768px) {
-//   .nav-spacer
-//   {
-//     margin-left: $tabSpacing;
-//     margin-right: $tabSpacing;
-//   }
-// }
+@media only screen and (max-width: 768px) {
+  .nav-spacer
+  {
+    margin-left: 1.5*$tabSpacing;
+    margin-right: 1.5*$tabSpacing;
+  }
+}
