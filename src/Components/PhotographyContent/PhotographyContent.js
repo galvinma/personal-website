@@ -12,9 +12,12 @@ import ca_coast from '../.././Images/Gallery/ca_coast.jpg'
 import carlsbad_sunset from '../.././Images/Gallery/carlsbad_sunset.jpg'
 import church from '../.././Images/Gallery/church.jpg'
 import col from '../.././Images/Gallery/col.jpg'
+import columbia from '../.././Images/Gallery/columbia.jpg'
 import damnationcreek_ocean from '../.././Images/Gallery/damnationcreek_ocean.jpg'
 import damnationcreek from '../.././Images/Gallery/damnationcreek.jpg'
 import flor from '../.././Images/Gallery/flor.jpg'
+import finny from '../.././Images/Gallery/finny.jpg'
+import fred from '../.././Images/Gallery/fredericksburgbridge.jpg'
 import geneva from '../.././Images/Gallery/geneva.jpg'
 import kleinescheidegg from '../.././Images/Gallery/kleinescheidegg.jpg'
 import lake_lucerne from '../.././Images/Gallery/lake_lugano.jpg'
@@ -23,11 +26,16 @@ import lincolncity from '../.././Images/Gallery/lincolncity.jpg'
 import lugano_swim from '../.././Images/Gallery/lugano_swim.jpg'
 import lugano from '../.././Images/Gallery/lugano.jpg'
 import mountrigi from '../.././Images/Gallery/mountrigi.jpg'
+import mount_constitution from '../.././Images/Gallery/mount_constitution.jpg'
+import mount_hood from '../.././Images/Gallery/mount_hood.jpg'
 import oeschinenseeClouds from '../.././Images/Gallery/oeschinenseeClouds.jpg'
 import oeschinenseeSide from '../.././Images/Gallery/oeschinenseeSide.jpg'
+import or_coast from '../.././Images/Gallery/or_coast.jpg'
+import or_coast_beach from '../.././Images/Gallery/or_coast_beach.jpg'
 import pl_mom_dad from '../.././Images/Gallery/pl_mom_dad.jpg'
 import pl_storm from '../.././Images/Gallery/pl_storm.jpg'
 import priestlake_point from '../.././Images/Gallery/priestlake_point.jpg'
+import portland_roses from '../.././Images/Gallery/portland_roses.jpg'
 import rome_bridge from '../.././Images/Gallery/rome_bridge.jpg'
 import rome_street from '../.././Images/Gallery/rome_street.jpg'
 import sardinia from '../.././Images/Gallery/sardinia.jpg'
@@ -52,11 +60,14 @@ class PhotographyContent extends React.Component {
         [church, "Mount Rigi, Switzerland"],
         [whitneysunrise, "Mount Whitney, High Sierra Trail"],
         [col, "Colosseum, Italy"],
+        [columbia, "Columbia River Gorge"],
         [damnationcreek_ocean, "Waves, Northern California"],
         [rome_street, "Rome, Italy"],
         [damnationcreek, "Damnation Creek, Northern California"],
         [oeschinenseeSide, "Oeschinensee, Switzerland"],
         [flor, "Plaza Michelangelo, Florence"],
+        [finny, "Finny"],
+        [fred, "Fredericksburg, VA"],
         [priestlake_point, "Priest Lake, Idaho"],
         [kleinescheidegg, "Kleinescheidegg, Switzerland"],
         [pl_mom_dad, "Family, Idaho"],
@@ -65,8 +76,13 @@ class PhotographyContent extends React.Component {
         [lincolncity, "Lincoln City, Oregon"],
         [lugano, "Lugano, Switzerland"],
         [mountrigi, "Mount Rigi, Switzerland"],
+        [mount_constitution, "Mount Constitution"],
+        [mount_hood, "Mount Hood"],
         [oeschinenseeClouds, "Oeschinensee, Switzerland"],
+        [or_coast, "Oregon Coast Sunset"],
+        [or_coast_beach, "Otter Rock"],
         [pl_storm, "Priest Lake, Idaho"],
+        [portland_roses, "Portland Rose Garden"],
         [lugano_swim, "Lugano, Switzerland"],
         [rome_bridge, "Rome, Italy"],
         [sardinia, "Sardinia, Italy"],

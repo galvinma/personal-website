@@ -28,6 +28,12 @@ import rankedchoicepoll_signup from '../.././Images/Portfolio/rankedchoicepoll_s
 import rankedchoicepoll_form from '../.././Images/Portfolio/rankedchoicepoll_form.png'
 import rankedchoicepoll_landing from '../.././Images/Portfolio/rankedchoicepoll_landing.png'
 
+
+import crossword from '../.././Images/Portfolio/crossword.png'
+import wordsearch from '../.././Images/Portfolio/wordsearch.png'
+import wordle from '../.././Images/Portfolio/wordle.png'
+import wordweb from '../.././Images/Portfolio/wordweb.png'
+
 class PortfolioContent extends React.Component {
   constructor(props) {
     super(props);
@@ -64,6 +70,12 @@ class PortfolioContent extends React.Component {
         [rankedchoicepoll_landing, rankedchoicepoll_signup, rankedchoicepoll_about, rankedchoicepoll_form],
         "https://rankedchoicepoll.com",
         "https://github.com/galvinma/ranked-choice-poll"
+      ],
+      ["Word Games",
+        "Simple JavaScript Word Games.",
+        [crossword, wordsearch, wordle, wordweb],
+        "https://github.com/galvinma/word-games",
+        "https://github.com/galvinma/word-games"
       ]]
     this.setState({
       content: content
