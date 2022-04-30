@@ -42,13 +42,6 @@ class Footer extends React.Component {
                 </a>
               </div>
 
-              <div class="body1 nav-spacer">|</div>
-              <div class="body1 nav-link-container">
-                <a class="nav-link nav-icon-container" href="https://www.twitter.com/galvinmath" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter className="nav-icon" />
-                </a>
-              </div>
-
             </div>
           </div>
 
