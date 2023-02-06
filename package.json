@@ -29,6 +29,9 @@
     "fsevents": "2.1.2"
   },
   "scripts": {
+    "local-start": "react-scripts start",
+    "local-deploy": "gh-pages -d build",
+    "local-build": "react-scripts build",
     "start": "react-scripts --openssl-legacy-provider start",
     "predeploy": "npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build",
