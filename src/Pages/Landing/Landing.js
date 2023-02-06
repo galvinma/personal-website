@@ -28,7 +28,7 @@ class Landing extends React.Component {
                 <p className="body1">Hi, I’m Matthew! 👋</p>
               </div>
               <div className="about-text">
-                <div className="body1">I’m a full-stack software engineer living in Boston, Massachusetts ⛵⚾⚕️</div>
+                <div className="body1">I’m a full-stack software engineer living in Boston, Massachusetts. ⛵⚾⚕️</div>
               </div>
               <div className="about-text">
                 <div className="body1">I work at the <a className="unstyled-link" href="https://www.dana-farber.org/" target="_blank" rel="noopener noreferrer">Dana-Farber Cancer Institute</a> within the <a className="unstyled-link" href="https://ds.dfci.harvard.edu/knowledge-systems/" target="_blank" rel="noopener noreferrer">Knowledge Systems Group</a>. Previously at <a className="unstyled-link" href="https://www.invitae.com" target="_blank" rel="noopener noreferrer">Invitae</a>, <a className="unstyled-link" href="https://oregon.providence.org/our-services/p/providence-cancer-center/" target="_blank" rel="noopener noreferrer">Providence Cancer Institute</a>, and <a className="unstyled-link" href="https://www.illumina.com" target="_blank" rel="noopener noreferrer">Illumina.</a></div>
