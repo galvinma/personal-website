@@ -1,20 +1,16 @@
 @import "../.././Variables.scss";
 
-.photography-image
-{
+.photography-image {
   width: 100%;
   padding: $tabSpacing;
 }
 
-.photo-caption
-{
+.photo-caption {
   margin-top: $tabSpacing !important;
   margin-bottom: 3*$tabSpacing !important;
 }
 
-.photography-wrapper
-{
+.photography-wrapper {
   margin-top: $gutterSpacing;
   margin-bottom: $gutterSpacing;
 }
-

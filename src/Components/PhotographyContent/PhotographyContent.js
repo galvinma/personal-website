@@ -63,45 +63,29 @@ class PhotographyContent extends React.Component {
 
     this.state = {
       images: [
-        [mount_hood, "Mount Hood"],
-        [ca_coast, "Highway 101, Northern California"],
-        [arno, "Florence, Italy"],
-        [carlsbad_sunset, "Near Carlsbad, San Diego"],
-        [whitneysunrise, "Mount Whitney, High Sierra Trail"],
-        [finny, "Finny"],
-        [columbia, "Columbia River Gorge"],
-        [damnationcreek_ocean, "Waves, Northern California"],
-        [rome_street, "Rome, Italy"],
-        [damnationcreek, "Damnation Creek, Northern California"],
-        [oeschinenseeSide, "Oeschinensee, Switzerland"],
-        [flor, "Plaza Michelangelo, Florence"],
-        [fred, "Fredericksburg, VA"],
-        [priestlake_point, "Priest Lake, Idaho"],
         [kleinescheidegg, "Kleinescheidegg, Switzerland"],
+        [damnationcreek, "Damnation Creek, Northern California"],
+        [mount_hood, "Mount Hood"],
+        [portland_roses, "Portland Rose Garden"],
+        [columbia, "Columbia River Gorge"],
+        [whitneysunrise, "Mount Whitney, High Sierra Trail"],
+        [oeschinenseeSide, "Oeschinensee, Switzerland"],
+        [carlsbad_sunset, "Near Carlsbad, San Diego"],
+        [ca_coast, "Highway 101, Northern California"],
+        [fred, "Fredericksburg, VA"],
+        [arno, "Florence, Italy"],
+        [finny, "Finny"],
         [pl_mom_dad, "Family, Idaho"],
+        [priestlake_point, "Priest Lake, Idaho"],
         [lake_lucerne, "Lake Lucerne, Switzerland"],
         [landsendrocks, "Lands End, San Francisco"],
-        [lincolncity, "Lincoln City, Oregon"],
-        [aboveguitar, "Guitar Lake, High Sierra Trail"],
-        [beach_camp, "Oregon Coast"],
-        [alpsRolling, "Above Wengen, Switzerland"],
-        [sardiniasunset, "Alghero, Italy"],
-        [lugano, "Lugano, Switzerland"],
-        [mountrigi, "Mount Rigi, Switzerland"],
-        [mount_constitution, "Mount Constitution"],
-        [church, "Mount Rigi, Switzerland"],
-        [oeschinenseeClouds, "Oeschinensee, Switzerland"],
-        [or_coast, "Oregon Coast Sunset"],
-        [or_coast_beach, "Otter Rock"],
         [pl_storm, "Priest Lake, Idaho"],
-        [portland_roses, "Portland Rose Garden"],
-        [lugano_swim, "Lugano, Switzerland"],
-        [rome_bridge, "Rome, Italy"],
+        [lincolncity, "Lincoln City, Oregon"],
+        [lugano, "Lugano, Switzerland"],
+        [church, "Mount Rigi, Switzerland"],
+        [or_coast, "Oregon Coast Sunset"],
         [col, "Colosseum, Italy"],
         [sardinia, "Sardinia, Italy"],
-        [super_bloom, "Desert, Southern California"],
-        [thor, "Train, Switzerland"],
-        [thunderstormcalm, "After the storm, High Sierra Trail"],
         [geneva, "Geneva, Switzerland"]
       ],
       numCols: numCols
@@ -153,6 +137,8 @@ class PhotographyContent extends React.Component {
     return <ImageMasonry
       children={this.returnImageArray()}
       numCols={numCols}
+      animate={false}
+      forceOrder={true}
     ></ImageMasonry>
   }
 

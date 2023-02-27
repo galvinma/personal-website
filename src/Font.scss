@@ -13,126 +13,119 @@
 // Min-width supported == 320 px (Iphone 5/SE)
 
 
-.h1, .h2, .h3, .h4, .h5, .h6, .subtitle1
-{
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.subtitle1 {
   font-family: "Montserrat";
   color: $primaryBlack;
 }
 
-.subtitle2, .body1, .body2, .body3, .button, .footer-text
-{
-  font-family: 'Work Sans', sans-serif;
-  color: $primaryGray;
+.subtitle2,
+.body1,
+.body2,
+.body3,
+.button,
+.footer-text {
+  font-family: "Montserrat";
+  color: $primaryBlack;
 }
 
-.h1
-{
+.h1 {
   font-size: 5rem;
 }
 
-.h2
-{
+.h2 {
   font-size: 4rem;
 }
 
-.h3
-{
+.h3 {
   font-size: 3rem;
 }
 
-.body1, .button
-{
+.body1,
+.button {
   font-size: 1.25rem;
   line-height: 1.8rem;
   font-weight: 400;
 }
 
-.body3
-{
+.body3 {
   font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1050px) {
-	.h1
-  {
+  .h1 {
     font-size: 4rem;
   }
 
-  .h2
-  {
+  .h2 {
     font-size: 3rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
-	.h1
-  {
+  .h1 {
     font-size: 3.5rem;
   }
 
-  .h2
-  {
+  .h2 {
     font-size: 3rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 2.8rem;
   }
 
-  .body1, .button
-  {
+  .body1,
+  .button {
     font-size: 1.1rem;
   }
 
-  .body3
-  {
+  .body3 {
     font-size: 1rem;
   }
 
 }
 
 @media only screen and (max-width: 768px) {
-	.h1
-  {
+  .h1 {
     font-size: 2.8rem;
   }
 
-  .h2
-  {
+  .h2 {
     font-size: 2.5rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 2rem;
   }
 
-  .body3
-  {
+  .body3 {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
 
-  .h1
-  {
+  .h1 {
     font-size: 2.4rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 1.6rem;
   }
 
-  .body3, .button, .footer-text
-  {
+  .body3,
+  .button,
+  .footer-text {
     font-size: 0.9rem;
   }
 }
@@ -140,31 +133,28 @@
 
 @media only screen and (max-width: 500px) {
 
-  .h1
-  {
+  .h1 {
     font-size: 2.3rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
 
-  .h1
-  {
+  .h1 {
     font-size: 2.0rem;
   }
 
-  .h3
-  {
+  .h3 {
     font-size: 1.25rem;
   }
 
-  .body3, .button, .footer-text
-  {
+  .body3,
+  .button,
+  .footer-text {
     font-size: 0.8rem;
   }
 }
