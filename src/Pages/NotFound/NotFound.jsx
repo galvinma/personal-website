@@ -24,14 +24,11 @@ class NotFound extends React.Component {
       <div className="single-page-content-wrapper">
 
         <Nav />
-        
-        <div className="not-found-content-wrapper">
-          <div className="not-found-text-container">
-            <div className="subtitle1 not-found-text">Uh, oh. Something went wrong.</div>
-            <div className="subtitle1 not-found-text">
+        <div className="content">
+            <div className="body1 not-found-text">Uh, oh. Something went wrong.</div>
+            <div className="body1 not-found-text">
               <NavLink exact to="/" className="unstyled-link">Take me back.</NavLink>
             </div>
-          </div>
         </div>
 
       </div>

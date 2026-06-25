@@ -1,8 +1,0 @@
-# self-hosted
-
-docker-compose build
-docker-compose down && docker-compose up -d
-
-# gh-pages
-
-npm run deploy

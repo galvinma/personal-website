@@ -1,26 +1,27 @@
-FROM node:10
+FROM node:24 AS builder
 
-EXPOSE 3000
-
-RUN apt-get update && apt-get -y install sudo && apt-get install nano
-
-# General
 RUN mkdir -p /app
 WORKDIR /app
-COPY /public /app/public
-COPY /src /app/src
-COPY /.env /app/
-COPY /.gitignore /app/
-COPY /docker-ui-entrypoint.sh /app/
+
 COPY /package.json  /app/
 COPY /package-lock.json  /app/
 
-# NPM
-RUN npm install serve -g
 RUN npm install
-RUN npm run build --no-cache
 
-# Entry
-COPY ./docker-ui-entrypoint.sh /app/docker-ui-entrypoint.sh
-RUN chmod +x /app/docker-ui-entrypoint.sh
-ENTRYPOINT ["/app/docker-ui-entrypoint.sh"]
+COPY /public /app/public
+COPY /src /app/src
+COPY /.env /app/
+COPY /index.html /app/
+
+RUN npm run build
+
+
+FROM nginx:alpine
+
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]
+
+

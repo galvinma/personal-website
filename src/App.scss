@@ -134,6 +134,7 @@ body {
   flex: 1;
   padding-left: 2*$gutterSpacing;
   padding-right: 2*$gutterSpacing;
+  padding-top: 2*$tabSpacing;
 }
 
 .footer {
@@ -148,6 +149,7 @@ body {
   .content,
   .footer,
   .top-nav {
+    padding-top: $tabSpacing;
     padding-left: 1*$gutterSpacing;
     padding-right: 1*$gutterSpacing;
   }

@@ -10,7 +10,6 @@ class Nav extends React.Component {
     super(props);
 
     this.state = {
-      portfolioActive: "nav-link-active-false",
       photographyActive: "nav-link-active-false",
       homeActive: "nav-link-active-false",
     }
@@ -23,7 +22,6 @@ class Nav extends React.Component {
 
   resetActiveState() {
     this.setState({
-      portfolioActive: "nav-link-active-false",
       photographyActive: "nav-link-active-false",
       homeActive: "nav-link-active-false",
     })
@@ -37,12 +35,7 @@ class Nav extends React.Component {
       loc = window.location.href.split("/").pop()
     }
 
-    if (loc === "portfolio") {
-      this.setState({
-        portfolioActive: "nav-link-active"
-      })
-    }
-    else if (loc === "photography") {
+    if (loc === "photography") {
       this.setState({
         photographyActive: "nav-link-active"
       })
@@ -70,20 +63,12 @@ class Nav extends React.Component {
           </div>
           <div className="nav-text-container">
             <div id="nav-content-title" className="name h1"><Link class="nav-link" to="/">Matthew Galvin</Link></div>
-            <div id="nav-content-subtitle" className="h3"><Link class="nav-link" to="/">Software Engineer</Link></div>
-          </div>
-        </div>
 
         <div className="top-nav-link-container">
           <div className="nav-link-container-wrapper">
 
             <div className="body1 nav-link-container button">
               <Link id="home" className={`nav-link ${this.state.homeActive}`} to="/">Home</Link>
-            </div>
-
-            <div className="body1 nav-spacer">|</div>
-            <div className="body1 nav-link-container button">
-              <Link id="portfolio" className={`nav-link ${this.state.portfolioActive}`} to="/portfolio">Portfolio</Link>
             </div>
 
             <div className="body1 nav-spacer">|</div>
@@ -97,7 +82,9 @@ class Nav extends React.Component {
             </div>
 
           </div>
+        </div>          </div>
         </div>
+
       </div>
     )
   }
