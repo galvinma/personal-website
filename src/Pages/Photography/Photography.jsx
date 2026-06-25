@@ -95,11 +95,11 @@ class Photography extends React.Component {
         <div className="page-wrapper">
           <Nav />
           <div className="content">
-            <PhotoProvider  style={{ display: 'flex', flex: '50px', padding: '50px' }}>
-            <div >
+            <PhotoProvider>
+            <div className="photo-container">
               {images.map((item, index) => (
                 <PhotoView key={index} src={item[0]}>
-                  <img src={item[0]} alt={item[1]} style={{ width: '100%', maxWidth: "800px", height: 'auto', objectFit: 'cover', cursor: 'pointer' }} />
+                  <img src={item[0]} alt={item[1]} className="photo-obj" />
                 </PhotoView>
               ))}
             </div>
