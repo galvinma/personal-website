@@ -7,6 +7,8 @@ import App from "./app";
 import Landing from "./Pages/Landing/Landing";
 import Photography from "./Pages/Photography/Photography";
 import NotFound from "./Pages/NotFound/NotFound";
+
+// Include at root
 import 'react-photo-view/dist/react-photo-view.css';
 
 
